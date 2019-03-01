@@ -25,6 +25,7 @@ function getURL(apiResult) {
   if (apiResult.message === 'Breed not found') {
     store.invalid = true;
     store.urls = [];
+    store.currentNumber = 0;
   } else {
     store.urls = [apiResult.message];
     store.invalid = false;
